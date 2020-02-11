@@ -18,10 +18,10 @@ print(x)
 def outer():
     y = 120
 
-    def inner():
+    def inner(y):
         y = 999
 
-    inner()
+    inner(y)
 
     # This prints 120. What do we have to change in inner() to get it to print
     # 999?
