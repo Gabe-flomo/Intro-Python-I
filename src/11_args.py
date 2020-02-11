@@ -7,7 +7,7 @@
 # YOUR CODE HERE
 
 print(f1(1, 2))
-
+print()
 # Write a function f2 that takes any number of integer arguments and prints the
 # sum.
 # Note: Google for "python arbitrary arguments" and look for "*args"
