@@ -1,10 +1,9 @@
 # Write a function is_even that will return true if the passed-in number is even.
 
 def iseven(num):
-    if num % 2 == 0:
-        return True
-    else:
-        return False
+    
+    return num % 2 == 0
+  
 
 def isodd(num):
     if num%2 == 0:

@@ -30,3 +30,21 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+
+def get_date(month = None, year = None):
+  
+  if (month == None and year == None):
+    today = str(datetime.today())
+    month = int(today.split("-")[1]) if month is None else month
+    year = int(today.split("-")[0])
+    return calendar.month(year,month)
+  elif (month == int or year == None):
+    today = str(datetime.today())
+    year = int(today.split("-")[0])
+    return calendar.month(year,month)
+  elif month == None or year == int:
+    raise ValueError("Expected a month and none was given")
+  
+
+cal = get_date(5)   
+print(cal)
